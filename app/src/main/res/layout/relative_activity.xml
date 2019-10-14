@@ -2,34 +2,75 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textTXT"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Calculadora IMC"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/titleApp"
         android:textColor="@color/colorText"
-        android:textSize="34sp"
-        />
+        android:textSize="34sp" />
 
     <EditText
         android:id="@+id/weightTXT"
         android:layout_width="180dp"
-        android:layout_height="match_parent"
-        android:layout_below="@id/weightTXT"
-        android:layout_alignStart="@id/weightTXT"
-        android:layout_marginTop="36dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTXT"
+        android:layout_centerHorizontal="true"
         android:backgroundTint="@color/colorText"
-        android:hint="seu peso (kg)"
-        android:padding="20dp"
-        android:inputType="numberDecimal"
+        android:layout_marginTop="40dp"
+        android:hint="@string/weight"
+        android:padding="18dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+
+        android:textColorHint="@color/colorText"
+
         />
 
+    <EditText
+        android:id="@+id/heigthTXT"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weightTXT"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/height"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorText"
+        android:textColor="@color/colorText"
+        android:backgroundTint="@color/colorText"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="38dp"
+        android:padding="18dp"
+        />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heigthTXT"
+        android:layout_marginTop="36dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorSuccess"
+        android:text="@string/calculate"
+        android:textColor="@color/colorSuccessBtn"
+        />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCalculate"
+        android:layout_marginTop="36dp"
+        android:text="@string/clear"
+        android:textColor="@color/colorClear"
+        android:layout_centerHorizontal="true"
+        />
 
 </RelativeLayout>
