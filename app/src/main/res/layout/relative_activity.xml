@@ -23,16 +23,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textTXT"
         android:layout_centerHorizontal="true"
-        android:backgroundTint="@color/colorText"
         android:layout_marginTop="40dp"
+        android:backgroundTint="@color/colorText"
         android:hint="@string/weight"
         android:padding="18dp"
         android:textAlignment="center"
         android:textColor="@color/colorText"
-
-        android:textColorHint="@color/colorText"
-
-        />
+        android:textColorHint="@color/colorText" />
 
     <EditText
         android:id="@+id/heigthTXT"
@@ -40,37 +37,39 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/weightTXT"
         android:layout_centerHorizontal="true"
-        android:hint="@string/height"
-        android:textAlignment="center"
-        android:textColorHint="@color/colorText"
-        android:textColor="@color/colorText"
-        android:backgroundTint="@color/colorText"
-        android:inputType="numberDecimal"
         android:layout_marginTop="38dp"
+        android:backgroundTint="@color/colorText"
+        android:hint="@string/height"
+        android:inputType="numberDecimal"
         android:padding="18dp"
-        />
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText" />
 
-    <Button
-        android:id="@+id/btnCalculate"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/heigthTXT"
-        android:layout_marginTop="36dp"
         android:layout_centerHorizontal="true"
-        android:background="@color/colorSuccess"
-        android:text="@string/calculate"
-        android:textColor="@color/colorSuccessBtn"
-        />
-
-    <Button
-        android:id="@+id/btnClear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnCalculate"
         android:layout_marginTop="36dp"
-        android:text="@string/clear"
-        android:textColor="@color/colorClear"
-        android:layout_centerHorizontal="true"
-        />
+        android:textAlignment="center">
 
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:background="@color/colorSuccess"
+            android:text="@string/calculate"
+            android:textColor="@color/colorSuccessBtn" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:background="@color/colorSecound"
+            android:text="@string/clear"
+            android:textColor="@color/colorClear" />
+    </LinearLayout>
 </RelativeLayout>
